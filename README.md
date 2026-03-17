@@ -1,139 +1,132 @@
-<p align="center">
-  <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="docs/assets/logo-light.svg">
-      <img height="100" alt="Endee" src="docs/assets/logo-dark.svg">
-  </picture>
-</p>
+# 🎯 HireIQ - AI Career Intelligence Platform
 
-<p align="center">
-    <b>High-performance open-source vector database for AI search, RAG, semantic search, and hybrid retrieval.</b>
-</p>
+> An intelligent AI-powered career platform built using **Endee Vector Database**, Groq LLaMA AI, and Streamlit.
 
-<p align="center">
-    <a href="./docs/getting-started.md"><img src="https://img.shields.io/badge/Quick_Start-Local_Setup-success?style=flat-square" alt="Quick Start"></a>
-    <a href="https://docs.endee.io/quick-start"><img src="https://img.shields.io/badge/Docs-Quick_Start-success?style=flat-square" alt="Docs"></a>
-    <a href="https://github.com/endee-io/endee/blob/master/LICENSE"><img src="https://img.shields.io/github/license/endee-io/endee?style=flat-square" alt="License"></a>
-    <a href="https://discord.gg/5HFGqDZQE3"><img src="https://img.shields.io/badge/Discord-Join_Chat-5865F2?logo=discord&style=flat-square" alt="Discord"></a>
-    <a href="https://endee.io/"><img src="https://img.shields.io/badge/Website-Endee-111111?style=flat-square" alt="Website"></a>
-    <!-- <a href="https://endee.io/benchmarks"><img src="https://img.shields.io/badge/Benchmarks-Coming_Soon-1F8B4C?style=flat-square" alt="Benchmarks"></a> -->
-    <!-- <a href="https://endee.io/cloud"><img src="https://img.shields.io/badge/Cloud-Coming_Soon-2496ED?style=flat-square" alt="Cloud"></a> -->
-</p>
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Endee](https://img.shields.io/badge/Vector%20DB-Endee-purple)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
+![Groq](https://img.shields.io/badge/LLM-Groq%20LLaMA-green)
 
-<p align="center">
-<strong><a href="./docs/getting-started.md">Quick Start</a> • <a href="#why-endee">Why Endee</a> • <a href="#use-cases">Use Cases</a> • <a href="#features">Features</a> • <a href="#api-and-clients">API and Clients</a> • <a href="#docs-and-links">Docs</a> • <a href="#community-and-contact">Contact</a></strong>
-</p>
+---
 
-# Endee: Open-Source Vector Database for AI Search
+## 🌟 What is HireIQ?
 
-**Endee** is a high-performance open-source vector database built for AI search and retrieval workloads. It is designed for teams building **RAG pipelines**, **semantic search**, **hybrid search**, recommendation systems, and filtered vector retrieval APIs that need production-oriented performance and control.
+HireIQ is an intelligent career platform that helps job seekers get hired faster by analyzing their resume against job descriptions using the power of **semantic search** and **AI**.
 
-Endee combines vector search with filtering, sparse retrieval support, backup workflows, and deployment flexibility across local builds and Docker-based environments. The project is implemented in C++ and optimized for modern CPU targets, including AVX2, AVX512, NEON, and SVE2.
+Upload your resume, paste a job description, and get:
 
-If you want the fastest path to evaluate Endee locally, start with the [Getting Started guide](./docs/getting-started.md) or the hosted docs at [docs.endee.io](https://docs.endee.io/quick-start).
+- 📊 **Skills Analytics** — Match score + skill gap analysis
+- 📝 **AI Resume Builder** — ATS-optimized resume tailored to the job
+- ⚡ **Strategic Action Plan** — 3 actionable steps to strengthen your application
+- 🧠 **Interview Intelligence** — 10+ tailored questions with suggested answers
+- 🚀 **30-Day Career Roadmap** — Daily tasks with mind maps for each day
+- 🤝 **AI Career Intelligence Assistant** — Chat with AI about your profile
 
-## Why Endee
+---
 
-- Built as a dedicated vector database for AI applications, search systems, and retrieval-heavy workloads.
-- Supports dense vector retrieval plus sparse search capabilities for hybrid search use cases.
-- Includes payload filtering for metadata-aware retrieval and application-specific query logic.
-- Ships with operational features already documented in this repo, including backup flows and runtime observability.
-- Offers flexible deployment paths: local scripts, manual builds, Docker images, and prebuilt registry images.
+## 🏗️ System Design
 
-## Getting Started
-
-The full installation, build, Docker, runtime, and authentication instructions are in [docs/getting-started.md](./docs/getting-started.md).
-
-Fastest local path:
-
-```bash
-chmod +x ./install.sh ./run.sh
-./install.sh --release --avx2
-./run.sh
+```
+┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
+│   User uploads  │────▶│  Sentence Trans  │────▶│  Endee Vector   │
+│  Resume + JD    │     │  former Embedder │     │   Database      │
+└─────────────────┘     └──────────────────┘     └────────┬────────┘
+                                                           │
+                                                    Semantic Search
+                                                           │
+┌─────────────────┐     ┌──────────────────┐     ┌────────▼────────┐
+│   Streamlit UI  │◀────│  Groq LLaMA 3.3  │◀────│ Relevant Chunks │
+│  (Results +     │     │  70B AI Analysis │     │   Retrieved     │
+│    Chat)        │     └──────────────────┘     └─────────────────┘
+└─────────────────┘
 ```
 
-The server listens on port `8080`. For detailed setup paths, supported operating systems, CPU optimization flags, Docker usage, and authentication examples, use:
+## 🗄️ How Endee Vector Database is Used
 
-- [Getting Started](./docs/getting-started.md)
-- [Hosted Quick Start Docs](https://docs.endee.io/quick-start)
+Endee is the **core** of this application:
 
-## Use Cases
+1. **Resume Storage** — Resume text is chunked and stored as vectors in `resume_index`
+2. **Job Description Storage** — JD is chunked and stored in `job_index`
+3. **Semantic Search** — Finds most relevant chunks for context
+4. **Match Scoring** — Cosine similarity between resume and JD vectors gives the match score
 
-### RAG and AI Retrieval
+---
 
-Use Endee as the retrieval layer for question answering, chat assistants, copilots, and other RAG applications that need fast vector search with metadata-aware filtering.
+## 🛠️ Tech Stack
 
-### Agentic AI and AI Agent Memory
+| Technology                | Purpose                                              |
+| ------------------------- | ---------------------------------------------------- |
+| **Endee**                 | Vector Database for storing and searching embeddings |
+| **Python**                | Core programming language                            |
+| **Streamlit**             | Web UI framework                                     |
+| **Sentence Transformers** | Free local text embeddings (all-MiniLM-L6-v2)        |
+| **Groq LLaMA 3.3 70B**    | LLM for AI analysis, resume building and chat        |
+| **Plotly**                | Skills proficiency chart visualization               |
+| **PyPDF2**                | PDF text extraction                                  |
+| **Docker**                | Running Endee locally                                |
 
-Use Endee as the long-term memory and context retrieval layer for AI agents built with frameworks like LangChain, CrewAI, AutoGen, and LlamaIndex. Store and retrieve past observations, tool outputs, conversation history, and domain knowledge mid-execution with low-latency filtered vector search, so your autonomous agents get the right context without stalling their reasoning loop.
+---
 
-### Semantic Search
+## ⚙️ Setup Instructions
 
-Build semantic search experiences for documents, products, support content, and knowledge bases using vector similarity search instead of exact keyword-only matching.
+### Prerequisites
 
-### Hybrid Search
+- Python 3.8+
+- Docker Desktop
+- Groq API Key (free at https://console.groq.com)
 
-Combine dense retrieval, sparse vectors, and filtering to improve relevance for search workflows where both semantic understanding and term-level precision matter.
+### Step 1: Clone the Repository
 
-### Recommendations and Matching
+```bash
+git clone https://github.com/poojitha-R04/job-assistant
+cd job-assistant
+```
 
-Support recommendation, similarity matching, and nearest-neighbor retrieval workflows across text, embeddings, and other high-dimensional representations.
+### Step 2: Start Endee Vector Database
 
-## Features
+```bash
+docker compose up -d
+```
 
-- **Vector search** for AI retrieval and semantic similarity workloads.
-- **Hybrid retrieval support** with sparse vector capabilities documented in [docs/sparse.md](./docs/sparse.md).
-- **Payload filtering** for structured retrieval logic documented in [docs/filter.md](./docs/filter.md).
-- **Backup APIs and flows** documented in [docs/backup-system.md](./docs/backup-system.md).
-- **Operational logging and instrumentation** documented in [docs/logs.md](./docs/logs.md) and [docs/mdbx-instrumentation.md](./docs/mdbx-instrumentation.md).
-- **CPU-targeted builds** for AVX2, AVX512, NEON, and SVE2 deployments.
-- **Docker deployment options** for local and server environments.
+### Step 3: Install Dependencies
 
-## API and Clients
+```bash
+pip install -r requirements.txt
+```
 
-Endee exposes an HTTP API for managing indexes and serving retrieval workloads. The current repo documentation and examples focus on running the server directly and calling its API endpoints.
+### Step 4: Run the App
 
-Current developer entry points:
+```bash
+python -m streamlit run app.py
+```
 
-- [Getting Started](./docs/getting-started.md) for local build and run flows
-- [Hosted Docs](https://docs.endee.io/quick-start) for product documentation
-- [Release Notes 1.0.0](https://github.com/endee-io/endee/releases/tag/1.0.0) for recent platform changes
+### Step 5: Open in Browser
 
-## Docs and Links
+```
+http://localhost:8501
+```
 
-- [Getting Started](./docs/getting-started.md)
-- [Hosted Documentation](https://docs.endee.io/quick-start)
-- [Release Notes](https://github.com/endee-io/endee/releases/tag/1.0.0)
-- [Sparse Search](./docs/sparse.md)
-- [Filtering](./docs/filter.md)
-- [Backups](./docs/backup-system.md)
+---
 
-## Community and Contact
+## 🚀 How to Use
 
-- Join the community on [Discord](https://discord.gg/5HFGqDZQE3)
-- Visit the website at [endee.io](https://endee.io/)
-- For trademark or branding permissions, contact [enterprise@endee.io](mailto:enterprise@endee.io)
+1. Enter your **Groq API Key** in the sidebar
+2. Upload your **Resume as PDF**
+3. Paste the **Job Description**
+4. Click **"Analyze with HireIQ"**
+5. View your **Match Score + AI Insights**
+6. Use the **Chat** to ask follow-up questions
 
-## Contributing
+---
 
-We welcome contributions from the community to help make vector search faster and more accessible for everyone.
+## 👩‍💻 Author
 
-- Submit pull requests for fixes, features, and improvements
-- Report bugs or performance issues through GitHub issues
-- Propose enhancements for search quality, performance, and deployment workflows
+**Poojitha R**
 
-## License
+- GitHub: [@poojitha-R04](https://github.com/poojitha-R04)
 
-Endee is open source software licensed under the **Apache License 2.0**. See the [LICENSE](./LICENSE) file for full terms.
+---
 
-## Trademark and Branding
+## 📄 License
 
-“Endee” and the Endee logo are trademarks of Endee Labs.
-
-The Apache License 2.0 does not grant permission to use the Endee name, logos, or branding in a way that suggests endorsement or affiliation.
-
-If you offer a hosted or managed service based on this software, you must use your own branding and avoid implying it is an official Endee service.
-
-## Third-Party Software
-
-This project includes or depends on third-party software components licensed under their respective open-source licenses. Use of those components is governed by their own license terms.
+This project is open source and available under the [MIT License](LICENSE).
