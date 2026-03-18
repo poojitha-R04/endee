@@ -123,7 +123,7 @@ http://localhost:8501
 
 ### 🏠 Hero Section
 
-![Hero](screenshots/01_hero.png)
+![Hero](screenshots/01_hero.png.png)
 
 ### 📤 Upload Resume
 
