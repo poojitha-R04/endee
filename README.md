@@ -125,43 +125,64 @@ http://localhost:8501
 
 ![Hero](screenshots/1_hero.png)
 
+### 📤 Upload Resume
+
+![Upload](screenshots/2_upload_resume.png)
+
 ### 📊 Candidate Dashboard
 
-![Dashboard](screenshots/5_dashboard.png)
-
-### 📊 Skills Analytics
-
-![Skills](screenshots/6_skills.png)
+![Dashboard](screenshots/3_dashboard.png)
 
 ### 📈 Skill Proficiency Chart
 
-![Chart](screenshots/7_chart.png)
+![Chart](screenshots/4_chart.png)
 
 ### 📝 AI Resume Builder
 
-![Resume](screenshots/8_resume_builder.png)
+![Resume](screenshots/5_resume_builder.png)
 
 ### ⚡ Strategic Action Plan
 
-![Actions](screenshots/9_action_plan.png)
+![Actions](screenshots/6_action_plan.png)
 
 ### 🧠 Interview Questions
 
-![Interview](screenshots/10_interview.png)
+![Interview](screenshots/7_interview.png)
+
+### ➕ Generate More Questions
+
+![More1](screenshots/8_more_questions.png)
+
+### ➕ Generated Questions
+
+![More2](screenshots/9_more_questions.png)
 
 ### 🚀 30-Day Career Roadmap
 
-![Roadmap](screenshots/13_roadmap.png)
+![Roadmap1](screenshots/10_roadmap.png)
+
+### 📅 Roadmap Weeks
+
+![Roadmap2](screenshots/11_roadmap.png)
+
+### 📅 Roadmap Days
+
+![Roadmap3](screenshots/12_roadmap.png)
 
 ### 🧠 Mind Map
 
-![Mindmap](screenshots/14_mindmap.png)
+![Mindmap](screenshots/13_roadmap.png)
 
 ### 🤝 AI Career Assistant
 
-![Assistant](screenshots/15_assistant.png)
+![Assistant](screenshots/14_assistant.png)
+
+### 💬 AI Chat Response
+
+![Response](screenshots/15_assistant.png)
 
 ```
+
 
 
 
