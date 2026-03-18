@@ -155,31 +155,31 @@ http://localhost:8501
 
 ### ➕ Generated Questions
 
-![More2](screenshots/09_more_questions.png)
+![More2](./screenshots/09_more_questions.png)
 
 ### 🚀 30-Day Career Roadmap
 
-![Roadmap1](screenshots/10_roadmap.png)
+![Roadmap1](./screenshots/10_roadmap.png)
 
 ### 📅 Roadmap Weeks
 
-![Roadmap2](screenshots/11_roadmap.png)
+![Roadmap2](./screenshots/11_roadmap.png)
 
 ### 📅 Roadmap Days
 
-![Roadmap3](screenshots/12_roadmap.png)
+![Roadmap3](./screenshots/12_roadmap.png)
 
 ### 🧠 Mind Map
 
-![Mindmap](screenshots/13_roadmap.png)
+![Mindmap](./screenshots/13_roadmap.png)
 
 ### 🤝 AI Career Assistant
 
-![Assistant](screenshots/14_assistant.png)
+![Assistant](./screenshots/14_assistant.png)
 
 ### 💬 AI Chat Response
 
-## ![Response](screenshots/15_assistant.png)
+![Response](./screenshots/15_assistant.png)
 
 ## 👩‍💻 Author
 
