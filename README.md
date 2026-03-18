@@ -179,7 +179,7 @@ http://localhost:8501
 
 ### 💬 AI Chat Response
 
-![Response](./screenshots/15_assistant.png)
+![Assistant](./screenshots/15_assistant.png)
 
 ## 👩‍💻 Author
 
