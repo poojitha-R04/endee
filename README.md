@@ -119,6 +119,53 @@ http://localhost:8501
 
 ---
 
+## 📸 Project Screenshots
+
+### 🏠 Hero Section
+
+![Hero](screenshots/1_hero.png)
+
+### 📊 Candidate Dashboard
+
+![Dashboard](screenshots/5_dashboard.png)
+
+### 📊 Skills Analytics
+
+![Skills](screenshots/6_skills.png)
+
+### 📈 Skill Proficiency Chart
+
+![Chart](screenshots/7_chart.png)
+
+### 📝 AI Resume Builder
+
+![Resume](screenshots/8_resume_builder.png)
+
+### ⚡ Strategic Action Plan
+
+![Actions](screenshots/9_action_plan.png)
+
+### 🧠 Interview Questions
+
+![Interview](screenshots/10_interview.png)
+
+### 🚀 30-Day Career Roadmap
+
+![Roadmap](screenshots/13_roadmap.png)
+
+### 🧠 Mind Map
+
+![Mindmap](screenshots/14_mindmap.png)
+
+### 🤝 AI Career Assistant
+
+![Assistant](screenshots/15_assistant.png)
+
+```
+
+
+
+
 ## 👩‍💻 Author
 
 **Poojitha R**
@@ -130,3 +177,4 @@ http://localhost:8501
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+```
