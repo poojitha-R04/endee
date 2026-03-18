@@ -123,39 +123,39 @@ http://localhost:8501
 
 ### 🏠 Hero Section
 
-![Hero](screenshots/1_hero.png)
+![Hero](screenshots/01_hero.png)
 
 ### 📤 Upload Resume
 
-![Upload](screenshots/2_upload_resume.png)
+![Upload](screenshots/02_upload_resume.png)
 
 ### 📊 Candidate Dashboard
 
-![Dashboard](screenshots/3_dashboard.png)
+![Dashboard](screenshots/03_dashboard.png)
 
 ### 📈 Skill Proficiency Chart
 
-![Chart](screenshots/4_chart.png)
+![Chart](screenshots/04_chart.png)
 
 ### 📝 AI Resume Builder
 
-![Resume](screenshots/5_resume_builder.png)
+![Resume](screenshots/05_resume_builder.png)
 
 ### ⚡ Strategic Action Plan
 
-![Actions](screenshots/6_action_plan.png)
+![Actions](screenshots/06_action_plan.png)
 
 ### 🧠 Interview Questions
 
-![Interview](screenshots/7_interview.png)
+![Interview](screenshots/07_interview.png)
 
 ### ➕ Generate More Questions
 
-![More1](screenshots/8_more_questions.png)
+![More1](screenshots/08_more_questions.png)
 
 ### ➕ Generated Questions
 
-![More2](screenshots/9_more_questions.png)
+![More2](screenshots/09_more_questions.png)
 
 ### 🚀 30-Day Career Roadmap
 
@@ -179,13 +179,7 @@ http://localhost:8501
 
 ### 💬 AI Chat Response
 
-![Response](screenshots/15_assistant.png)
-
-```
-
-
-
-
+## ![Response](screenshots/15_assistant.png)
 
 ## 👩‍💻 Author
 
@@ -198,4 +192,7 @@ http://localhost:8501
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+```
+
 ```
